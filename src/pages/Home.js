@@ -54,15 +54,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'space-around',
     backgroundColor: 'white',
   },
   containerImage: {
     flexDirection: 'row',
     width: '100%',
-    height: 420,
+    height: 300,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: 60,
+    paddingTop: 40,
   },
   image: {
     height: 146,
@@ -74,14 +75,13 @@ const styles = StyleSheet.create({
     color: 'red',
   },
   containerButton: {
-    position: 'absolute',
-    bottom: 35,
     width: '100%',
     height: 250,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     paddingHorizontal: 8,
+    paddingBottom: 30,
   },
   button: {
     alignItems: 'center',
