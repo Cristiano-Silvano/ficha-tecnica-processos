@@ -32,7 +32,12 @@ const Home = () => {
           <Text style={styles.textoButton}>2</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity disabled style={styles.button}>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          style={styles.button}
+          onPress={() => {
+            navigation.navigate('FichaTecnica3');
+          }}>
           <Text style={styles.textoButton}>Máquina</Text>
           <Text style={styles.textoButton2}>3</Text>
         </TouchableOpacity>
