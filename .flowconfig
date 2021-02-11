@@ -26,6 +26,7 @@ node_modules/react-native/flow/
 
 [options]
 emoji=true
+module.name_mapper='^react-native$' -> 'react-native-web'
 
 esproposal.optional_chaining=enable
 esproposal.nullish_coalescing=enable
