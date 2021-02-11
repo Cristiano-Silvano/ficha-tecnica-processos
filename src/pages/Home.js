@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
-        <Image style={styles.image} source={require('../../logo.png')} />
+        <Image style={styles.image} source={require('../images/logo.png')} />
         <Text style={styles.title}>FICHA DE PROCESSO</Text>
       </View>
       <View style={styles.containerButton}>
@@ -54,16 +54,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'space-around',
     backgroundColor: 'white',
   },
   containerImage: {
     flexDirection: 'row',
     width: '100%',
-    height: 300,
+    height: 420,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 40,
+    paddingBottom: 60,
   },
   image: {
     height: 146,
@@ -75,13 +74,14 @@ const styles = StyleSheet.create({
     color: 'red',
   },
   containerButton: {
+    position: 'absolute',
+    bottom: 35,
     width: '100%',
     height: 250,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     paddingHorizontal: 8,
-    paddingBottom: 30,
   },
   button: {
     alignItems: 'center',
